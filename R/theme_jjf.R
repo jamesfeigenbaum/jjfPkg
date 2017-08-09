@@ -31,8 +31,8 @@ theme_jjf <- function () {
     plot.margin = unit(c(1, 1, 1, 1), "lines"),
     # and make the font size 12 and computer modern
     # text = element_text(size = 12, family = "RobotoCondensed-Regular")
-    text = element_text(size = 12, family = "CMU Sans Serif")
-    # text = element_text(size = 12)
+    # text = element_text(size = 12, family = "CMU Sans Serif")
+    text = element_text(size = 12)
     # can't use CMU on princeton computer because I can't install fonts...
 	)
 }
