@@ -13,3 +13,16 @@ Simple set of personal R functions. I like this better than my .Rprofile because
   - function to copy to clipboard my template to start an R file?
     - or my template for a Rmd?
 - Make sure not to put anything private in here because the repo is public
+
+### Test the theme
+
+```{r}
+
+library(tidyverse)
+library(extrafont)
+
+ggplot(cars, aes(x = dist, y = speed)) + 
+  geom_point() + 
+  theme_jjf()
+
+```
