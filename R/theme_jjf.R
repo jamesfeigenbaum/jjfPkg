@@ -7,6 +7,8 @@
 #' @examples
 #' theme_jjf()
 
+library(extrafont)
+
 theme_jjf <- function () {
 	theme(
 	  # make the background white (blank)
