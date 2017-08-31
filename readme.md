@@ -20,6 +20,7 @@ Simple set of personal R functions. I like this better than my .Rprofile because
 
 library(tidyverse)
 library(extrafont)
+library(jjfPkg)
 
 ggplot(cars, aes(x = dist, y = speed)) + 
   geom_point() + 
