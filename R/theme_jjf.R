@@ -8,7 +8,7 @@
 #' theme_jjf()
 
 theme_jjf <- function (font = "Roboto Condensed") {
-	theme(
+	ggplot2::theme(
 	  # make the background white (blank)
 	  panel.background = element_blank(),
 	  # and no ugly legend backgrounds
