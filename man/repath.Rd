@@ -2,14 +2,11 @@
 % Please edit documentation in R/repath.R
 \name{repath}
 \alias{repath}
-\title{JJF Theme Function}
+\title{JJF repath function}
 \usage{
 repath()
 }
 \description{
 Converts the backslash to fowardslash (or vice versa?)
-}
-\examples{
-repath()
 }
 \keyword{repath}

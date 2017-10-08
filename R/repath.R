@@ -1,11 +1,10 @@
 #' JJF repath function
 #'
 #' Converts the backslash to fowardslash (or vice versa?)
-#' @param ""
+#' @param "none"
 #' @keywords repath
 #' @export
-#' @examples
-#' repath()
+#'
 
 repath <- function() {
    cat('Paste windows file path and hit RETURN twice')

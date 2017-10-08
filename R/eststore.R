@@ -1,41 +1,57 @@
 #' JJF eststore function
 #'
 #' Store regression output in a list list statas eststore
-#' @param "est, estlist_arg"
+#' @param est the regression estimate to be stored
+#' @param estlist_arg the list of stored regressions
 #' @keywords eststore
-#' @export
+#' @return side effect style update the estlist_arg with the est
 #' @examples
-#' eststore()
+#' mtcars %>%
+#'   lm(data = ., mpg ~ disp) %>%
+#'   eststore(car_regs)
+#'
+#' mtcars %>%
+#'   lm(data = ., mpg ~ hp) %>%
+#'   eststore(car_regs)
+#'
+#' mtcars %>%
+#'   lm(data = ., mpg ~ disp + hp) %>%
+#'   eststore(car_regs)
+#'
+#' car_regs
+#'
+#' @export
+#'
 
 eststore <- function(est, estlist_arg = estlist) {
-  
+
   # estlist name
   estlist_string <-
     substitute(estlist_arg) %>%
     deparse()
-  
+
   # if the estlist doesn't already exist or is empty make it
   # otherwise add to it
   if (!exists(estlist_string)) {
-    
+
     out <-
       est %>%
       list()
-    
+
   } else {
-    
+
     out <-
       est %>%
       list() %>%
       c(estlist_arg, .)
-    
+
   }
-  
+
   enviro <-
     environment() %>%
     parent.env()
-  
-  estlist_string %>% 
+
+  estlist_string %>%
     assign(out, pos = enviro)
-  
+
 }
