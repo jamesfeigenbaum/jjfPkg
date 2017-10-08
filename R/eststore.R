@@ -51,6 +51,8 @@ eststore <- function(est, estlist_arg = estlist) {
     environment() %>%
     parent.env()
 
+  enviro %>% print()
+  
   estlist_string %>%
     assign(out, pos = enviro)
 

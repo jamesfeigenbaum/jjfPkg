@@ -30,7 +30,7 @@ mtcars \%>\%
   lm(data = ., mpg ~ disp + hp) \%>\%
   eststore(car_regs)
 
-car_regs
+stargazer::stargazer(car_regs, type = "text")
 
 }
 \keyword{eststore}
