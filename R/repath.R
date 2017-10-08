@@ -1,4 +1,4 @@
-#' JJF Theme Function
+#' JJF repath function
 #'
 #' Converts the backslash to fowardslash (or vice versa?)
 #' @param ""
