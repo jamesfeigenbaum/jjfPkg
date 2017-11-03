@@ -35,5 +35,16 @@ ggplot(cars, aes(x = dist, y = speed)) +
   geom_point() +
   theme_jjf(font = "CMU Sans Serif")
 
+```
+
+### How to use the state codes
+
+```{r}
+
+x <- c("New York", "Virginia")
+
+state.fips[match(x, state.name)]
+state.icpsr[match(x, state.name)]
+state.ipums.bpl[match(x, state.name)]
 
 ```

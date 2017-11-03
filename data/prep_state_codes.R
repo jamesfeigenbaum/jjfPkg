@@ -48,6 +48,6 @@
 # # now we want to store state.fips, state.icpsr, and state.ipums.bpl in the package
 # setwd("G:/dropbox/Research/_KnowledgeBase/jjfPkg")
 #
-# save(state.fips, file = "data/state.fips.Rdata")
-# save(state.icpsr, file = "data/state.icpsr.Rdata")
-# save(state.ipums.bpl, file = "data/state.ipums.bpl.Rdata")
+# save(state.fips, file = "data/state.fips.rda")
+# save(state.icpsr, file = "data/state.icpsr.rda")
+# save(state.ipums.bpl, file = "data/state.ipums.bpl.rda")
