@@ -5,6 +5,7 @@
 #' @param estlist_arg the list of stored regressions
 #' @keywords eststore
 #' @return side effect style update the estlist_arg with the est
+#' @import magrittr
 #' @examples
 #' mtcars %>%
 #'   lm(data = ., mpg ~ disp) %>%

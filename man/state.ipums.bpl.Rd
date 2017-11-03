@@ -19,6 +19,6 @@ This has bpl codes from ipums
 \examples{
 data(state.ipums.bpl)
 x <- c("New York", "Virginia")
-state.ipums.bplipums.bpl[match(x, state.name)]
+state.ipums.bpl[match(x, state.name)]
 }
 \keyword{datasets}

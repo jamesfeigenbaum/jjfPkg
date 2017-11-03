@@ -13,16 +13,16 @@ theme_jjf(font = "Roboto Condensed")
 Add my custom ggplot2 theme
 }
 \examples{
-ggplot(cars, aes(x = dist, y = speed)) +
+ggplot2::ggplot(cars, aes(x = dist, y = speed)) +
   geom_point() +
   theme_jjf()
 
 # same as above, roboto Condensed is the default
-ggplot(cars, aes(x = dist, y = speed)) +
+ggplot2::ggplot(cars, aes(x = dist, y = speed)) +
   geom_point() +
   theme_jjf(font = "Roboto Condensed")
 
-ggplot(cars, aes(x = dist, y = speed)) +
+ggplot2::ggplot(cars, aes(x = dist, y = speed)) +
   geom_point() +
   theme_jjf(font = "CMU Sans Serif")
 

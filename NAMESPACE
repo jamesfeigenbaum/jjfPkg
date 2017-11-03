@@ -3,3 +3,6 @@
 export(eststore)
 export(repath)
 export(theme_jjf)
+import(extrafont)
+import(ggplot2)
+import(magrittr)

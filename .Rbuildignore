@@ -1,2 +1,5 @@
 ^.*\.Rproj$
 ^\.Rproj\.user$
+eststore_readme*
+readme.md
+R-devel*
