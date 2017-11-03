@@ -3,8 +3,10 @@
 #' Add my custom ggplot2 theme
 #' @param font the font to use in the graph with Roboto Condensed as the default
 #' @keywords theme
-#' @import ggplot2 extrafont
+#' @import ggplot2 hrbrthemes
 #' @examples
+#' hrbrthemes::import_roboto_condensed
+#'
 #' ggplot2::ggplot(cars, aes(x = dist, y = speed)) +
 #'   geom_point() +
 #'   theme_jjf()
@@ -14,9 +16,9 @@
 #'   geom_point() +
 #'   theme_jjf(font = "Roboto Condensed")
 #'
-#' ggplot2::ggplot(cars, aes(x = dist, y = speed)) +
-#'   geom_point() +
-#'   theme_jjf(font = "CMU Sans Serif")
+#' # ggplot2::ggplot(cars, aes(x = dist, y = speed)) +
+#' #  geom_point() +
+#' #  theme_jjf(font = "CMU Sans Serif")
 #'
 #' @export
 #'

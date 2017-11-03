@@ -19,7 +19,11 @@
 #'   lm(data = ., mpg ~ disp + hp) %>%
 #'   eststore(car_regs)
 #'
-#' stargazer::stargazer(car_regs, type = "text")
+#' car_regs[[1]] %>% summary()
+#' car_regs[[2]] %>% summary()
+#' car_regs[[3]] %>% summary()
+#'
+#' # stargazer::stargazer(car_regs, type = "text")
 #'
 #' @export
 #'

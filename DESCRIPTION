@@ -3,7 +3,7 @@ Title: Personal R Package
 Version: 0.0.0.9002
 Authors@R: person("James", "Feigenbaum", email = "james.feigenbaum@gmail.com", role = c("aut", "cre"))
 Description: Simple package to store my personal functions and themes and whatever else.
-Depends: R (>= 3.3.2), extrafont, ggplot2, magrittr
+Depends: R (>= 3.3.2), ggplot2, magrittr, hrbrthemes
 Suggests: stargazer
 License: GPL-2
 Encoding: UTF-8
