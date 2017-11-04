@@ -12,10 +12,18 @@ Custom fonts are still giving me trouble but I'm working on it.
 devtools::install_github("jamesfeigenbaum/jjfPkg")
 ```
 
+### Build
+
+```{r}
+setwd("G:/Dropbox/Research/_KnowledgeBase/jjfPkg/")
+
+devtools::document()
+devtools::build()
+devtools::check()
+```
+
 ### To Do
 
-- Get the custom fonts working
-- Pass the `devtools::check()`
 - Add additional functions?
   - function to clear the workspace?
   - function to copy to clipboard my template to start an R file?
