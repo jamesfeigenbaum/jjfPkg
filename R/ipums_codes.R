@@ -1,6 +1,6 @@
 #' JJF scrape ipums codes
 #'
-#' Converts the backslash to fowardslash (or vice versa?)
+#' Pull the IPUMS codes to variable label lookup from the IPUMS website
 #' @param variable the name of the variable from ipums we want to scrape
 #' @param detailed get the general or detailed codes default FALSE for just general
 #' @import magrittr

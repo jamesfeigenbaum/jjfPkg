@@ -12,7 +12,7 @@ ipums_codes(variable, detailed = FALSE)
 \item{detailed}{get the general or detailed codes default FALSE for just general}
 }
 \description{
-Converts the backslash to fowardslash (or vice versa?)
+Pull the IPUMS codes to variable label lookup from the IPUMS website
 }
 \examples{
 \dontrun{
