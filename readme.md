@@ -4,10 +4,18 @@
 
 Simple set of personal R functions. I like this better than my .Rprofile because I can keep it synced over many devices easier.
 
+Custom fonts are still giving me trouble but I'm working on it.
+
+### Install
+
+```{r}
+devtools::install_github("jamesfeigenbaum/jjfPkg")
+```
+
 ### To Do
 
-- Get the custom fonts working on PC and NBER server
-  - Currently only working with Macbook Air
+- Get the custom fonts working
+- Pass the `devtools::check()`
 - Add additional functions?
   - function to clear the workspace?
   - function to copy to clipboard my template to start an R file?
