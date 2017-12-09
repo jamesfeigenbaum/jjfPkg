@@ -1,6 +1,6 @@
 Package: jjfPkg
 Title: Personal R Package
-Version: 0.0.0.9003
+Version: 0.0.0.9004
 Authors@R: person("James", "Feigenbaum", email = "james.feigenbaum@gmail.com", role = c("aut", "cre"))
 Description: Simple package to store my personal functions and themes and whatever else.
 Depends:
