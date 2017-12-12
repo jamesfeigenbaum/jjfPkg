@@ -39,7 +39,7 @@ ipums_codes <- function(variable, detailed = FALSE) {
     dplyr::as_tibble() %>%
     dplyr::filter(!is.na(code))
 
-  # no general?
+  # general or not?
   no_general <- (out %>% dplyr::filter(general == TRUE) %>% nrow() == 0)
 
   if (detailed == TRUE | no_general == TRUE) {
