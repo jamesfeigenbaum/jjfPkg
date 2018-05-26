@@ -22,7 +22,7 @@
 #' }
 #'
 
-theme_jjf <- function (font = "Roboto Condensed") {
+theme_jjf_slides <- function(font = "Roboto Condensed") {
   ggplot2::theme(
     # make the background white (blank)
     panel.background = element_blank(),
@@ -44,7 +44,7 @@ theme_jjf <- function (font = "Roboto Condensed") {
     plot.subtitle = element_text(hjust = 0.5),
     # a bit of space around the plot
     plot.margin = unit(c(1, 1, 1, 1), "lines"),
-    # and make the font size 12 and computer modern
+    # and make the font size 20 and roboto condensed
     text = element_text(size = 20, family = font)
   )
 }

@@ -1,5 +1,9 @@
 .onAttach <- function(libname, pkgname) {
 
+  # include my custom colors
+  burdred <- "#ca0020"
+  burdblue <- "#0571b0"
+
   # Ported from hrbrthemes
   # https://github.com/hrbrmstr/hrbrthemes/blob/4ed759095bb9c068852583d48acd7c8df7bb8a52/R/zzz.r
 
