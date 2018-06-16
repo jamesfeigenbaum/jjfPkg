@@ -1,12 +1,16 @@
-#' JJF scrape ipums codes
+#' @title Scrape IPUMS codes for any variable
 #'
-#' Pull the IPUMS codes to variable label lookup from the IPUMS website
+#' @description Pull the IPUMS codes to variable label lookup from the IPUMS website
+#'
 #' @param variable the name of the variable from ipums we want to scrape
 #' @param detailed get the general or detailed codes default FALSE for just general
+#'
 #' @import magrittr
-#' @import stringr
-#' @import jsonlite
-#' @import dplyr
+#' @importFrom stringr str_detect str_extract
+#' @importFrom jsonlite fromJSON
+#' @importFrom dplyr as_tibble filter select
+#' @importFrom RCurl getURL
+#'
 #' @export
 #'
 #' @examples \dontrun{

@@ -1,7 +1,11 @@
-#' JJF Theme Function for Slide Figures
+#' @title JJF Theme Function for Slides
 #'
-#' Add my custom ggplot2 theme
+#' @description JJF custom ggplot2 theme for slides
+#'     Clean white backgrounds, nice narrow font, etc.
+#'
 #' @param font the font to use in the graph with Roboto Condensed as the default
+#' @param fontsize the font size, 12 is good for papers and 20 for slides
+#'
 #' @keywords theme
 #' @import ggplot2
 #' @export
@@ -9,20 +13,20 @@
 #'
 #' ggplot2::ggplot(cars, aes(x = dist, y = speed)) +
 #'   geom_point() +
-#'   theme_jjf()
+#'   theme_jjf_slides()
 #'
 #' # same as above, roboto Condensed is the default
 #' ggplot2::ggplot(cars, aes(x = dist, y = speed)) +
 #'   geom_point() +
-#'   theme_jjf(font = "Roboto Condensed")
+#'   theme_jjf_slides(font = "Roboto Condensed")
 #'
 #' # ggplot2::ggplot(cars, aes(x = dist, y = speed)) +
 #' #  geom_point() +
-#' #  theme_jjf(font = "CMU Sans Serif")
+#' #  theme_jjf_slides(font = "CMU Sans Serif")
 #' }
 #'
 
-theme_jjf_slides <- function(font = "Roboto Condensed") {
+theme_jjf_slides <- function(font = "Roboto Condensed", fontsize = 20) {
   ggplot2::theme(
     # make the background white (blank)
     panel.background = element_blank(),
@@ -45,6 +49,6 @@ theme_jjf_slides <- function(font = "Roboto Condensed") {
     # a bit of space around the plot
     plot.margin = unit(c(1, 1, 1, 1), "lines"),
     # and make the font size 20 and roboto condensed
-    text = element_text(size = 20, family = font)
+    text = element_text(size = fontsize, family = font)
   )
 }

@@ -1,6 +1,6 @@
-#' State IPUMS BPL look up
+#' @title State IPUMS BPL look up
 #'
-#' Simple vector to use like state.abb or state.name
+#' @description  Simple vector to use like state.abb or state.name
 #' from the base datasets
 #' This has bpl codes from ipums
 #'

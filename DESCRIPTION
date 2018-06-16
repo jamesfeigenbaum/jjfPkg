@@ -1,18 +1,16 @@
 Package: jjfPkg
 Title: Personal R Package
-Version: 0.0.0.9004
+Version: 0.0.1
 Authors@R: person("James", "Feigenbaum", email = "james.feigenbaum@gmail.com", role = c("aut", "cre"))
 Description: Simple package to store my personal functions and themes and whatever else.
-Depends:
-    R (>= 3.3.2),
+Imports:
     ggplot2,
     magrittr,
-    extrafont,
     jsonlite,
     dplyr,
-    stringr
-Suggests:
-    stargazer
+    stringr,
+    RCurl,
+    extrafont
 License: GPL-2
 Encoding: UTF-8
 LazyData: true

@@ -2,7 +2,7 @@
 % Please edit documentation in R/ipums_codes.R
 \name{ipums_codes}
 \alias{ipums_codes}
-\title{JJF scrape ipums codes}
+\title{Scrape IPUMS codes for any variable}
 \usage{
 ipums_codes(variable, detailed = FALSE)
 }

@@ -4,13 +4,15 @@
 \alias{theme_jjf}
 \title{JJF Theme Function}
 \usage{
-theme_jjf(font = "Roboto Condensed")
+theme_jjf(font = "Roboto Condensed", fontsize = 12)
 }
 \arguments{
 \item{font}{the font to use in the graph with Roboto Condensed as the default}
+
+\item{fontsize}{the font size, 12 is good for papers and 20 for slides}
 }
 \description{
-Add my custom ggplot2 theme
+JJF custom ggplot2 theme. Clean white backgrounds, nice narrow font, etc.
 }
 \examples{
 \dontrun{

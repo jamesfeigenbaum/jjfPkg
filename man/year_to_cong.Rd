@@ -2,7 +2,7 @@
 % Please edit documentation in R/year_to_cong.R
 \name{year_to_cong}
 \alias{year_to_cong}
-\title{JJF Convert between Congress Number and Election Year}
+\title{Convert between Congress Number and Election Year}
 \usage{
 year_to_cong(year)
 }
@@ -10,7 +10,8 @@ year_to_cong(year)
 \item{year}{the election year (1788 to 2018, roughly)}
 }
 \description{
-Some data is by year and some with congress number
+Some data is by year and some with congress number.
+    Inevitably, you need it the other way...
 }
 \examples{
 

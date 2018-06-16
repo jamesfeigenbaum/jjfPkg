@@ -1,3 +1,5 @@
+#' @importFrom extrafont loadfonts
+
 .onAttach <- function(libname, pkgname) {
 
   # Ported from hrbrthemes

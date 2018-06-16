@@ -1,7 +1,10 @@
-#' JJF Theme Function
+#' @title JJF Theme Function
 #'
-#' Add my custom ggplot2 theme
+#' @description JJF custom ggplot2 theme. Clean white backgrounds, nice narrow font, etc.
+#'
 #' @param font the font to use in the graph with Roboto Condensed as the default
+#' @param fontsize the font size, 12 is good for papers and 20 for slides
+#'
 #' @keywords theme
 #' @import ggplot2
 #' @export
@@ -22,7 +25,7 @@
 #' }
 #'
 
-theme_jjf <- function(font = "Roboto Condensed") {
+theme_jjf <- function(font = "Roboto Condensed", fontsize = 12) {
 	ggplot2::theme(
 	  # make the background white (blank)
 	  panel.background = element_blank(),
@@ -45,6 +48,6 @@ theme_jjf <- function(font = "Roboto Condensed") {
     # a bit of space around the plot
     plot.margin = unit(c(1, 1, 1, 1), "lines"),
     # and make the font size 12 and roboto condensed
-    text = element_text(size = 12, family = font)
+    text = element_text(size = fontsize, family = font)
 	)
 }

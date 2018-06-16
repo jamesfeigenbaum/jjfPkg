@@ -1,8 +1,8 @@
-#' State FIPS look up
+#' @title State FIPS look up
 #'
-#' Simple vector to use like state.abb or state.name
+#' @description  Simple vector to use like state.abb or state.name
 #' from the base datasets
-#' This has fips codes
+#' This has fips codes for states
 #'
 #' @docType data
 #'

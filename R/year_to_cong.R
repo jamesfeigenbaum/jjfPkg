@@ -1,6 +1,8 @@
-#' JJF Convert between Congress Number and Election Year
+#' @title Convert between Congress Number and Election Year
 #'
-#' Some data is by year and some with congress number
+#' @description Some data is by year and some with congress number.
+#'     Inevitably, you need it the other way...
+#'
 #' @param year the election year (1788 to 2018, roughly)
 #' @export
 #'
@@ -13,6 +15,11 @@
 
 year_to_cong <- function(year) {
 
-  return((year - 1786)/2)
+  if (year %% 2 == 0) {
 
+    return((year - 1786)/2)
+
+  } else {
+    return(NA_integer_)
+  }
 }

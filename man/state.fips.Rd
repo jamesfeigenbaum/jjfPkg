@@ -14,7 +14,7 @@ data(state.fips)
 \description{
 Simple vector to use like state.abb or state.name
 from the base datasets
-This has fips codes
+This has fips codes for states
 }
 \examples{
 data(state.fips)

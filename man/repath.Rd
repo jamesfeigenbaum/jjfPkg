@@ -2,11 +2,12 @@
 % Please edit documentation in R/repath.R
 \name{repath}
 \alias{repath}
-\title{JJF repath function}
+\title{Repath function}
 \usage{
 repath()
 }
 \description{
-Converts the backslash to fowardslash (or vice versa?)
+Convert windows paths to unix paths
+    Converts the backslash to fowardslash
 }
 \keyword{repath}

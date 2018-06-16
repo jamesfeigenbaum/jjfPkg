@@ -1,6 +1,8 @@
-#' JJF repath function
+#' @title Repath function
 #'
-#' Converts the backslash to fowardslash (or vice versa?)
+#' @description Convert windows paths to unix paths
+#'     Converts the backslash to fowardslash
+#'
 #' @keywords repath
 #' @export
 #'

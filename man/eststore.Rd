@@ -2,7 +2,7 @@
 % Please edit documentation in R/eststore.R
 \name{eststore}
 \alias{eststore}
-\title{JJF eststore function}
+\title{Eststore function}
 \usage{
 eststore(est, estlist_arg = estlist)
 }
@@ -15,7 +15,7 @@ eststore(est, estlist_arg = estlist)
 side effect style update the estlist_arg with the est
 }
 \description{
-Store regression output in a list list statas eststore
+Store regression output in a list like stata's eststore
 }
 \examples{
 mtcars \%>\%
@@ -33,8 +33,6 @@ mtcars \%>\%
 car_regs[[1]] \%>\% summary()
 car_regs[[2]] \%>\% summary()
 car_regs[[3]] \%>\% summary()
-
-# stargazer::stargazer(car_regs, type = "text")
 
 }
 \keyword{eststore}
