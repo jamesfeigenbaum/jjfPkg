@@ -34,5 +34,6 @@ car_regs[[1]] \%>\% summary()
 car_regs[[2]] \%>\% summary()
 car_regs[[3]] \%>\% summary()
 
+# textablr::estout(car_regs)
 }
 \keyword{eststore}

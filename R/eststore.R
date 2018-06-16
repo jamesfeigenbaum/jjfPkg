@@ -25,6 +25,7 @@
 #' car_regs[[2]] %>% summary()
 #' car_regs[[3]] %>% summary()
 #'
+#' # textablr::estout(car_regs)
 #' @export
 #'
 
