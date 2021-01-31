@@ -4,7 +4,9 @@
 \name{state.icpsr}
 \alias{state.icpsr}
 \title{State ICPSR look up}
-\format{An object of class \code{"vector"}}
+\format{
+An object of class \code{"vector"}
+}
 \source{
 \href{https://gist.github.com/soodoku/4c6bbf529fab6ec0bc3576e829af7c5d}{Sooduko}
 }

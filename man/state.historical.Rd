@@ -10,12 +10,36 @@
 \alias{state.13.colony}
 \alias{state.slavery.1860}
 \title{State Historical Look Ups}
-\format{An object of class \code{"vector"}}
+\format{
+An object of class \code{"vector"}
+
+An object of class \code{logical} of length 50.
+
+An object of class \code{logical} of length 50.
+
+An object of class \code{character} of length 50.
+
+An object of class \code{character} of length 50.
+
+An object of class \code{logical} of length 50.
+
+An object of class \code{logical} of length 50.
+}
 \source{
 Wikipedia, mostly
 }
 \usage{
 data(state.confederacy)
+
+data(state.union)
+
+data(state.civilwar)
+
+data(state.admission)
+
+data(state.13.colony)
+
+data(state.slavery.1860)
 
 state.confederacy
 

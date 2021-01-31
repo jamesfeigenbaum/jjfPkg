@@ -4,7 +4,9 @@
 \name{state.fips}
 \alias{state.fips}
 \title{State FIPS look up}
-\format{An object of class \code{"vector"}}
+\format{
+An object of class \code{"vector"}
+}
 \source{
 \href{https://gist.github.com/soodoku/f9e18efe98f7d74931d8b4a79a49e6f5}{Sooduko}
 }

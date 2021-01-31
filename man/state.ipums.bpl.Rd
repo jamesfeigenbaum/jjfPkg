@@ -4,7 +4,9 @@
 \name{state.ipums.bpl}
 \alias{state.ipums.bpl}
 \title{State IPUMS BPL look up}
-\format{An object of class \code{"vector"}}
+\format{
+An object of class \code{"vector"}
+}
 \source{
 \href{https://usa.ipums.org/usa-action/variables/BPL#codes_section}{IPUMS BPL Codes}
 }
