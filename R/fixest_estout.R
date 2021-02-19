@@ -48,7 +48,8 @@ fixest_estout <- function(est_tex, file) {
     # drop conseq duplicate rows
     # hack to deal with FEs given same names
     # so they are in the same row
-    distinct() %>%
+    # but causes TROUBLE when SEs are the same for different vars...
+    # distinct() %>%
     # order within category
     group_by(id) %>%
     mutate(id1 = row_number()) %>%
