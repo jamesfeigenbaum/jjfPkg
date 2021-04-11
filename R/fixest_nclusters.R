@@ -9,7 +9,7 @@
 #' @import magrittr
 #' @importFrom purrr map_int
 #'
-#' @export fixest_ymean
+#' @export fixest_nclusters
 #'
 
 fixest_nclusters <- function(est) {
