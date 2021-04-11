@@ -13,5 +13,5 @@ fixest_ymean(est)
 row of ymeans
 }
 \description{
-Helper function that will output a tex fragment
+Helper function that will output the ymean
 }

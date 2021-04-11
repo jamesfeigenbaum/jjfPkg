@@ -1,6 +1,6 @@
 #' @title Ymeans Helper Function for Fixest
 #'
-#' @description Helper function that will output a tex fragment
+#' @description Helper function that will output the ymean
 #'
 #' @param est output from fixest::feols or another regression function
 #'
