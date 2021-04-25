@@ -5,7 +5,7 @@
 #' @import magrittr
 #' @importFrom tibble tribble
 #'
-#' @export
+#' @export ipums_educ
 
 ipums_educ <- function() {
 

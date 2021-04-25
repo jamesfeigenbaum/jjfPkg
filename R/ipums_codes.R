@@ -11,7 +11,7 @@
 #' @importFrom dplyr as_tibble filter select
 #' @importFrom RCurl getURL
 #'
-#' @export
+#' @export ipums_codes
 #'
 #' @examples \dontrun{
 #'
