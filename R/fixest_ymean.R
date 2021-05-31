@@ -16,6 +16,6 @@ fixest_ymean <- function(est) {
 
   est %>%
     as.list() %>%
-    map_dbl( ~ fixest:::model.matrix.fixest(., type = "lhs") %>% .[[1]] %>% mean())
+    map_dbl( ~ fixest:::model.matrix.fixest(., type = "lhs") %>% mean())
 
 }
