@@ -7,7 +7,7 @@
 cong_to_year(cong)
 }
 \arguments{
-\item{cong}{the congress number (1 to 115 as of 2018)}
+\item{cong}{the congress number (1 to... 115 as of 2018, but any integer will work)}
 }
 \description{
 Some data is by year and some with congress number.

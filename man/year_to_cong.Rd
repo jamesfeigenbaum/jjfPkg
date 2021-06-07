@@ -7,7 +7,7 @@
 year_to_cong(year)
 }
 \arguments{
-\item{year}{the election year (1788 to 2018, roughly)}
+\item{year}{the election year (1788 to any year, must be even)}
 }
 \description{
 Some data is by year and some with congress number.

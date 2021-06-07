@@ -2,7 +2,6 @@
 
 export("%>%")
 export(cong_to_year)
-export(eststore)
 export(fixest_estout)
 export(fixest_nclusters)
 export(fixest_ymean)

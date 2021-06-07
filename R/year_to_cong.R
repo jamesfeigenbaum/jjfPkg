@@ -3,7 +3,7 @@
 #' @description Some data is by year and some with congress number.
 #'     Inevitably, you need it the other way...
 #'
-#' @param year the election year (1788 to 2018, roughly)
+#' @param year the election year (1788 to any year, must be even)
 #' @export
 #'
 #' @examples

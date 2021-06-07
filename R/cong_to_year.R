@@ -3,7 +3,7 @@
 #' @description Some data is by year and some with congress number.
 #'     Inevitably, you need it the other way...
 #'
-#' @param cong the congress number (1 to 115 as of 2018)
+#' @param cong the congress number (1 to... 115 as of 2018, but any integer will work)
 #' @export
 #'
 #' @examples
