@@ -29,7 +29,7 @@ fixest_estout <- function(est_tex, file) {
     # cut anything that says tabular
     mutate(tabular = str_detect(raw, "tabular")) %>%
     filter(tabular != TRUE) %>%
-    mutate(model_numbers = str_detect(raw, "^&\\(1")) %>%
+    mutate(model_numbers = str_detect(raw, "^ & \\(1")) %>%
     mutate(before_model_numbers = cumsum(model_numbers)) %>%
     filter(before_model_numbers != 0) %>%
     select(id, raw) %>%
