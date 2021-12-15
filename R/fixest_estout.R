@@ -36,7 +36,7 @@ fixest_estout <- function(est_tex, file) {
     mutate(type = case_when(id == 1L ~ "model_numbers",
                             id == 2L ~ "first_midrule",
                             midrules == 1L & se2 < max(se2) ~ "coeffs",
-                            se2 == 3 & midrules != 2L ~ "fes",
+                            se2 == max(se2) & midrules != 2L ~ "fes",
                             midrules == 2L ~ "stats")) %>%
     # order within category
     group_by(type) %>%
