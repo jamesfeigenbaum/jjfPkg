@@ -24,11 +24,14 @@ fixest_estout <- function(est_tex, file) {
     # cut anything that says tabular
     mutate(tabular = str_detect(raw, "tabular")) %>%
     filter(tabular != TRUE) %>%
+    # remove the endgroup thing at the end
+    filter(!str_detect(raw, "endgroup")) %>%
     mutate(model_numbers = str_detect(raw, " & \\(1\\)")) %>%
     mutate(before_model_numbers = cumsum(model_numbers)) %>%
     filter(before_model_numbers != 0) %>%
     mutate(id = row_number()) %>%
     select(tex = raw, id) %>%
+    mutate(tex = tex %>% as.character() %>% str_trim()) %>%
     mutate(midrules = cumsum(str_detect(tex, "midrule"))) %>%
     # find ses (this also catches model numbers...)
     mutate(se1 = str_detect(tex, "& \\(") %>% as.integer()) %>%
@@ -62,6 +65,7 @@ fixest_estout <- function(est_tex, file) {
                          str_replace_all(tex, "& ([A-Za-z0-9.,]+)", "& \\\\multicolumn{1}{c}{\\1}"),
                          tex))
 
+  # save out
   out_tex %>%
     pull(tex) %>%
     str_split("\\\\add") %>%
@@ -70,6 +74,7 @@ fixest_estout <- function(est_tex, file) {
     str_trim() %>%
     cat(file = file, sep = "\n")
 
+  # and display
   out_tex %>%
     pull(tex) %>%
     return()
